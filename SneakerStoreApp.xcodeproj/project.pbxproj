@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1517CEE82A2675800041BB28 /* Step1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1517CEE72A2675800041BB28 /* Step1ViewController.swift */; };
+		1517CEEA2A2675890041BB28 /* Step2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1517CEE92A2675890041BB28 /* Step2ViewController.swift */; };
+		1517CEEC2A2675960041BB28 /* Step3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1517CEEB2A2675960041BB28 /* Step3ViewController.swift */; };
+		1517CEEF2A26761B0041BB28 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1517CEEE2A26761B0041BB28 /* TabBarViewController.swift */; };
+		1517CEF22A2679190041BB28 /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1517CEF12A2679190041BB28 /* CatalogViewController.swift */; };
+		1517CEF52A2679390041BB28 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1517CEF42A2679390041BB28 /* CartViewController.swift */; };
+		1517CEF82A2679510041BB28 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1517CEF72A2679510041BB28 /* ProfileViewController.swift */; };
 		1546F6E42A23A22900B04004 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1546F6E32A23A22900B04004 /* AppDelegate.swift */; };
-		1546F6E82A23A22900B04004 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1546F6E72A23A22900B04004 /* ViewController.swift */; };
 		1546F6ED2A23A22A00B04004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1546F6EC2A23A22A00B04004 /* Assets.xcassets */; };
 		1546F6F02A23A22A00B04004 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1546F6EE2A23A22A00B04004 /* LaunchScreen.storyboard */; };
 		159425602A25F26A006F4C20 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1594255F2A25F26A006F4C20 /* UIView+Extensions.swift */; };
@@ -16,9 +22,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1517CEE72A2675800041BB28 /* Step1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1ViewController.swift; sourceTree = "<group>"; };
+		1517CEE92A2675890041BB28 /* Step2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step2ViewController.swift; sourceTree = "<group>"; };
+		1517CEEB2A2675960041BB28 /* Step3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3ViewController.swift; sourceTree = "<group>"; };
+		1517CEEE2A26761B0041BB28 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		1517CEF12A2679190041BB28 /* CatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
+		1517CEF42A2679390041BB28 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		1517CEF72A2679510041BB28 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		1546F6E02A23A22900B04004 /* SneakerStoreApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SneakerStoreApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1546F6E32A23A22900B04004 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1546F6E72A23A22900B04004 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1546F6EC2A23A22A00B04004 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1546F6EF2A23A22A00B04004 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1546F6F12A23A22A00B04004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,6 +49,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1517CEE62A26756D0041BB28 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				1517CEE72A2675800041BB28 /* Step1ViewController.swift */,
+				1517CEE92A2675890041BB28 /* Step2ViewController.swift */,
+				1517CEEB2A2675960041BB28 /* Step3ViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		1517CEED2A26760D0041BB28 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				1517CEEE2A26761B0041BB28 /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		1517CEF02A2679080041BB28 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				1517CEF12A2679190041BB28 /* CatalogViewController.swift */,
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
+		1517CEF32A2679280041BB28 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				1517CEF42A2679390041BB28 /* CartViewController.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		1517CEF62A2679460041BB28 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				1517CEF72A2679510041BB28 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		1546F6D72A23A22900B04004 = {
 			isa = PBXGroup;
 			children = (
@@ -56,30 +110,18 @@
 		1546F6E22A23A22900B04004 /* SneakerStoreApp */ = {
 			isa = PBXGroup;
 			children = (
-				1594255A2A25F1B5006F4C20 /* Resources */,
-				1594255B2A25F210006F4C20 /* Sources */,
+				1546F6F12A23A22A00B04004 /* Info.plist */,
+				1546F6EC2A23A22A00B04004 /* Assets.xcassets */,
+				1546F6EE2A23A22A00B04004 /* LaunchScreen.storyboard */,
+				1546F6E32A23A22900B04004 /* AppDelegate.swift */,
+				1517CEED2A26760D0041BB28 /* TabBar */,
+				1517CEF02A2679080041BB28 /* Catalog */,
+				1517CEF32A2679280041BB28 /* Cart */,
+				1517CEF62A2679460041BB28 /* Profile */,
+				1594255C2A25F23D006F4C20 /* Utilities */,
+				1517CEE62A26756D0041BB28 /* Onboarding */,
 			);
 			path = SneakerStoreApp;
-			sourceTree = "<group>";
-		};
-		1594255A2A25F1B5006F4C20 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				1546F6EE2A23A22A00B04004 /* LaunchScreen.storyboard */,
-				1546F6EC2A23A22A00B04004 /* Assets.xcassets */,
-				1546F6F12A23A22A00B04004 /* Info.plist */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		1594255B2A25F210006F4C20 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				1594255C2A25F23D006F4C20 /* Utilities */,
-				1546F6E32A23A22900B04004 /* AppDelegate.swift */,
-				1546F6E72A23A22900B04004 /* ViewController.swift */,
-			);
-			path = Sources;
 			sourceTree = "<group>";
 		};
 		1594255C2A25F23D006F4C20 /* Utilities */ = {
@@ -177,9 +219,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1517CEEF2A26761B0041BB28 /* TabBarViewController.swift in Sources */,
 				159425622A25F30C006F4C20 /* CustomButton.swift in Sources */,
+				1517CEF52A2679390041BB28 /* CartViewController.swift in Sources */,
+				1517CEEA2A2675890041BB28 /* Step2ViewController.swift in Sources */,
+				1517CEEC2A2675960041BB28 /* Step3ViewController.swift in Sources */,
 				159425602A25F26A006F4C20 /* UIView+Extensions.swift in Sources */,
-				1546F6E82A23A22900B04004 /* ViewController.swift in Sources */,
+				1517CEF82A2679510041BB28 /* ProfileViewController.swift in Sources */,
+				1517CEF22A2679190041BB28 /* CatalogViewController.swift in Sources */,
+				1517CEE82A2675800041BB28 /* Step1ViewController.swift in Sources */,
 				1546F6E42A23A22900B04004 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,7 +372,7 @@
 				INFOPLIST_FILE = SneakerStoreApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -352,7 +400,7 @@
 				INFOPLIST_FILE = SneakerStoreApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
