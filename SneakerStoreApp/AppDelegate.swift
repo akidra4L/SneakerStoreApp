@@ -18,7 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.makeKeyAndVisible()
         self.window?.rootViewController = TabBarViewController()
         
+        setupInitialSettings()
+        
         return true
+    }
+    
+    fileprivate func setupInitialSettings() {
+        UINavigationBar.appearance().isTranslucent = false
     }
 }
 

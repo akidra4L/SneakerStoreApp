@@ -25,7 +25,7 @@ class TabBarViewController: UITabBarController {
             
             createNavigationController(for: CartViewController(), title: "Cart", image: UIImage(systemName: "cart")!),
             
-            createNavigationController(for: CatalogViewController(), title: "Profile", image: UIImage(systemName: "person.circle.fill")!)
+            createNavigationController(for: ProfileViewController(), title: "Profile", image: UIImage(systemName: "person.circle.fill")!)
         ]
     }
     
