@@ -40,10 +40,15 @@ class ShoesCell: UICollectionViewCell {
         setConstraints()
         
         self.backgroundColor = .white
+        self.layer.cornerRadius = 4
+        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.shadowOpacity = 0.05
+        self.layer.shadowOffset = CGSize(width: 0, height: 2)
+        self.layer.shadowRadius = 4
+        self.layer.masksToBounds = false
     }
     
     private func setConstraints() {
-        self.layer.cornerRadius = 4
         imageView.anchor(top: self.topAnchor, right: self.rightAnchor, left: self.leftAnchor, paddingTop: 2, paddingRight: 2, paddingLeft: 2, height: 156)
     }
 }
