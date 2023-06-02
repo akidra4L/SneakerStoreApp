@@ -23,7 +23,7 @@ class ShoesService {
             
             Shoes(image: UIImage(named: "4")!, shoesBrand: "Jordan", shoesDescription: "Кеды с принтом граффити", price: 1251),
             
-            Shoes(image: UIImage(named: "5")!, shoesBrand: "New Balance", shoesDescription: "Кроссовки 993 Brown из коллаборации с Aimé Leon Dore", price: 325),
+            Shoes(image: UIImage(named: "5")!, shoesBrand: "New Balance", shoesDescription: "Кроссовки 993 Brown из\nколлаборации с Aimé Leon Dore", price: 325),
         ]
     }
     

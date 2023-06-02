@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		150C6B632A2A571C002AD585 /* CartTotalPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150C6B622A2A571C002AD585 /* CartTotalPriceView.swift */; };
+		150C6B652A2A675D002AD585 /* CartCellButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150C6B642A2A675D002AD585 /* CartCellButtonView.swift */; };
 		150EE8892A29E17900BBABDC /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150EE8882A29E17900BBABDC /* CustomImageView.swift */; };
 		150EE88E2A29E4E900BBABDC /* ShoesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150EE88D2A29E4E900BBABDC /* ShoesService.swift */; };
 		150EE8942A2A059200BBABDC /* EmptyCartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150EE8932A2A059200BBABDC /* EmptyCartView.swift */; };
@@ -29,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		150C6B622A2A571C002AD585 /* CartTotalPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTotalPriceView.swift; sourceTree = "<group>"; };
+		150C6B642A2A675D002AD585 /* CartCellButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCellButtonView.swift; sourceTree = "<group>"; };
 		150EE8882A29E17900BBABDC /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		150EE88D2A29E4E900BBABDC /* ShoesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesService.swift; sourceTree = "<group>"; };
 		150EE8932A2A059200BBABDC /* EmptyCartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCartView.swift; sourceTree = "<group>"; };
@@ -76,6 +80,8 @@
 			children = (
 				150EE8932A2A059200BBABDC /* EmptyCartView.swift */,
 				150EE8952A2A18C200BBABDC /* CartCell.swift */,
+				150C6B622A2A571C002AD585 /* CartTotalPriceView.swift */,
+				150C6B642A2A675D002AD585 /* CartCellButtonView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -307,7 +313,9 @@
 				15FE68E92A29A9490099BDAF /* ShoesCell.swift in Sources */,
 				15FE68E62A29A8A70099BDAF /* Shoes.swift in Sources */,
 				150EE8942A2A059200BBABDC /* EmptyCartView.swift in Sources */,
+				150C6B632A2A571C002AD585 /* CartTotalPriceView.swift in Sources */,
 				1517CEEF2A26761B0041BB28 /* TabBarViewController.swift in Sources */,
+				150C6B652A2A675D002AD585 /* CartCellButtonView.swift in Sources */,
 				150EE8892A29E17900BBABDC /* CustomImageView.swift in Sources */,
 				159425622A25F30C006F4C20 /* CustomButton.swift in Sources */,
 				1517CEF52A2679390041BB28 /* CartViewController.swift in Sources */,

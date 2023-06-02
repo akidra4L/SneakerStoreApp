@@ -9,9 +9,18 @@ import UIKit
 
 class CartViewController: UIViewController {
     
-    private var cartItems = [Shoes]()
+    private var cartItems = [Shoes]() {
+        didSet {
+            cartTotalView.totalItems = cartItems.count
+            cartTotalView.totalPrice = getTotalPrice()
+        }
+    }
     
     private let emptyCartView = EmptyCartView()
+    
+    private let cartTotalView = CartTotalPriceView()
+    
+    private let cartConfirmButton = CustomButton()
     
     private let cartTableView: UITableView = {
         let table = UITableView()
@@ -20,8 +29,6 @@ class CartViewController: UIViewController {
         table.separatorStyle = .none
         return table
     } ()
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,15 +46,26 @@ class CartViewController: UIViewController {
     }
     
     private func setUI() {
-        [emptyCartView, cartTableView].forEach { self.view.addSubview($0) }
+        [emptyCartView, cartTableView, cartTotalView, cartConfirmButton].forEach { self.view.addSubview($0) }
         
         setConstraints()
+        setButtons()
     }
     
     private func setConstraints() {
         emptyCartView.anchor(top: self.view.topAnchor, right: self.view.rightAnchor, left: self.view.leftAnchor, paddingTop: 300)
         
-        cartTableView.anchor(top: self.view.topAnchor, right: self.view.rightAnchor, bottom: self.view.bottomAnchor, left: self.view.leftAnchor, paddingTop: 16, paddingBottom: 100)
+        cartTableView.anchor(top: self.view.topAnchor, right: self.view.rightAnchor, bottom: self.view.bottomAnchor, left: self.view.leftAnchor, paddingTop: 16, paddingBottom: 200)
+        
+        cartTotalView.anchor(top: cartTableView.bottomAnchor, right: self.view.rightAnchor, left: self.view.leftAnchor, height: 50)
+        
+        cartConfirmButton.anchor(top: cartTotalView.bottomAnchor, right: self.view.rightAnchor, left: self.view.leftAnchor, paddingTop: 6, paddingRight: 16, paddingLeft: 16, height: 54)
+    }
+    
+    private func setButtons() {
+        cartConfirmButton.title = "Confirm Order"
+        cartConfirmButton.layer.cornerRadius = 24
+        cartConfirmButton.addTarget(self, action: #selector(didConfirmButtonTapped), for: .touchUpInside)
     }
 }
 
@@ -63,10 +81,37 @@ extension CartViewController {
         if cartItems.isEmpty {
             emptyCartView.isHidden = false
             cartTableView.isHidden = true
+            cartTotalView.isHidden = true
         } else {
             emptyCartView.isHidden = true
             cartTableView.isHidden = false
+            cartTotalView.isHidden = false
         }
+    }
+    
+    private func getTotalPrice() -> Int {
+        var sum: Int = 0
+        cartItems.forEach { sum += $0.price }
+        return sum
+    }
+    
+    @objc private func didConfirmButtonTapped() {
+        let alert = UIAlertController(title: "Confirmation", message: "Are you sure you want to proceed?", preferredStyle: .alert)
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        let confirmAction = UIAlertAction(title: "Confirm", style: .default) { _ in
+            self.openCustomBottomSheet()
+        }
+        
+        alert.addAction(cancelAction)
+        alert.addAction(confirmAction)
+        
+        present(alert, animated: true, completion: nil)
+    }
+    
+    private func openCustomBottomSheet() {
+        print("open")
     }
 }
 
@@ -82,6 +127,7 @@ extension CartViewController: UITableViewDataSource {
         }
         
         cell.cartItem = cartItems[indexPath.row]
+        cell.selectionStyle = .none
         
         return cell
     }

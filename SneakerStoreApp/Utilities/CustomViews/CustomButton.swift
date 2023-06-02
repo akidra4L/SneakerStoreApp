@@ -20,9 +20,9 @@ class CustomButton: UIButton {
         }
     }
     
-    public var customButtonType: CustomButtonTypes
+    public var customButtonType: CustomButtonTypes?
     
-    public init(type: CustomButtonTypes) {
+    public init(type: CustomButtonTypes? = nil) {
         self.customButtonType = type
         super.init(frame: .zero)
         

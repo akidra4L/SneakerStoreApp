@@ -25,7 +25,8 @@ class ShoesCell: UICollectionViewCell {
         didSet {
             guard let isAddedToCart = isAddedToCart else { return }
             guard let shoes = shoes else { return }
-            if isAddedToCart {
+            
+            if isAddedToCart && shoes.quantity ?? 0 > 0 {
                 cellButton.title = "Remove"
                 cellButton.backgroundColor = .black.withAlphaComponent(0.8)
                 priceLabel.text = "1 • $\(shoes.price)"
@@ -82,7 +83,6 @@ class ShoesCell: UICollectionViewCell {
         self.layer.shadowOpacity = 0.05
         self.layer.shadowOffset = CGSize(width: 0, height: 2)
         self.layer.shadowRadius = 4
-        self.layer.masksToBounds = false
     }
     
     private func setConstraints() {
