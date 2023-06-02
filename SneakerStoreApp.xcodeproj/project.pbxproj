@@ -10,6 +10,7 @@
 		150EE8892A29E17900BBABDC /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150EE8882A29E17900BBABDC /* CustomImageView.swift */; };
 		150EE88E2A29E4E900BBABDC /* ShoesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150EE88D2A29E4E900BBABDC /* ShoesService.swift */; };
 		150EE8942A2A059200BBABDC /* EmptyCartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150EE8932A2A059200BBABDC /* EmptyCartView.swift */; };
+		150EE8962A2A18C200BBABDC /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150EE8952A2A18C200BBABDC /* CartCell.swift */; };
 		1517CEE82A2675800041BB28 /* Step1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1517CEE72A2675800041BB28 /* Step1ViewController.swift */; };
 		1517CEEA2A2675890041BB28 /* Step2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1517CEE92A2675890041BB28 /* Step2ViewController.swift */; };
 		1517CEEC2A2675960041BB28 /* Step3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1517CEEB2A2675960041BB28 /* Step3ViewController.swift */; };
@@ -31,6 +32,7 @@
 		150EE8882A29E17900BBABDC /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		150EE88D2A29E4E900BBABDC /* ShoesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesService.swift; sourceTree = "<group>"; };
 		150EE8932A2A059200BBABDC /* EmptyCartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCartView.swift; sourceTree = "<group>"; };
+		150EE8952A2A18C200BBABDC /* CartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
 		1517CEE72A2675800041BB28 /* Step1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1ViewController.swift; sourceTree = "<group>"; };
 		1517CEE92A2675890041BB28 /* Step2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step2ViewController.swift; sourceTree = "<group>"; };
 		1517CEEB2A2675960041BB28 /* Step3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3ViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				150EE8932A2A059200BBABDC /* EmptyCartView.swift */,
+				150EE8952A2A18C200BBABDC /* CartCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				1517CEEC2A2675960041BB28 /* Step3ViewController.swift in Sources */,
 				159425602A25F26A006F4C20 /* UIView+Extensions.swift in Sources */,
 				15BBEE992A29B86E00CBE4BB /* Colors.swift in Sources */,
+				150EE8962A2A18C200BBABDC /* CartCell.swift in Sources */,
 				1517CEF82A2679510041BB28 /* ProfileViewController.swift in Sources */,
 				1517CEF22A2679190041BB28 /* CatalogViewController.swift in Sources */,
 				150EE88E2A29E4E900BBABDC /* ShoesService.swift in Sources */,

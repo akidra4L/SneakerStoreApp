@@ -14,7 +14,7 @@ class ShoesCell: UICollectionViewCell {
     public var shoes: Shoes? {
         didSet {
             guard let shoes = shoes else { return }
-            imageView.image = shoes.image
+            shoesImageView.image = shoes.image
             brandLabel.text = shoes.shoesBrand
             descriptionLabel.text = shoes.shoesDescription
             priceLabel.text = "$\(shoes.price)"
@@ -37,7 +37,7 @@ class ShoesCell: UICollectionViewCell {
         }
     }
     
-    private let imageView = CustomImageView()
+    private let shoesImageView = CustomImageView()
     
     private let cellButton = CustomButton(type: .addToCart)
     
@@ -71,7 +71,7 @@ class ShoesCell: UICollectionViewCell {
     }
     
     private func setUI() {
-        [imageView, cellButton, brandLabel, descriptionLabel, priceLabel].forEach { self.addSubview($0) }
+        [shoesImageView, cellButton, brandLabel, descriptionLabel, priceLabel].forEach { self.addSubview($0) }
         
         setConstraints()
         setButtons()
@@ -86,11 +86,11 @@ class ShoesCell: UICollectionViewCell {
     }
     
     private func setConstraints() {
-        imageView.anchor(top: self.topAnchor, right: self.rightAnchor, left: self.leftAnchor, paddingTop: 2, paddingRight: 2, paddingLeft: 2, height: 156)
+        shoesImageView.anchor(top: self.topAnchor, right: self.rightAnchor, left: self.leftAnchor, paddingTop: 2, paddingRight: 2, paddingLeft: 2, height: 156)
         
         cellButton.anchor(right: self.rightAnchor, bottom: self.bottomAnchor, left: self.leftAnchor, paddingRight: 6, paddingBottom: 12, paddingLeft: 6, height: 40)
         
-        brandLabel.anchor(top: imageView.bottomAnchor, right: self.rightAnchor, left: self.leftAnchor, paddingTop: 2, paddingRight: 6, paddingLeft: 6)
+        brandLabel.anchor(top: shoesImageView.bottomAnchor, right: self.rightAnchor, left: self.leftAnchor, paddingTop: 2, paddingRight: 6, paddingLeft: 6)
         
         descriptionLabel.anchor(top: brandLabel.bottomAnchor, right: self.rightAnchor, left: self.leftAnchor, paddingTop: 2, paddingRight: 6, paddingLeft: 6)
         
