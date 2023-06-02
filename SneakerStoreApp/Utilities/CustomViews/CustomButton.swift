@@ -9,11 +9,19 @@ import UIKit
 
 class CustomButton: UIButton {
     
+    public var title: String? {
+        didSet {
+            self.setTitle(title, for: .normal)
+        }
+    }
+    
     public init() {
         super.init(frame: .zero)
-        self.backgroundColor = .blue
+        self.backgroundColor = .black
         self.layer.cornerRadius = 12
-        self.titleLabel?.font = .systemFont(ofSize: 16, weight: .semibold)
+        
+        self.titleLabel?.textColor = .white
+        self.titleLabel?.font = .systemFont(ofSize: 16, weight: .regular)
         self.titleLabel?.textAlignment = .center
     }
     

@@ -24,6 +24,8 @@ class ShoesCell: UICollectionViewCell {
         return image
     } ()
     
+    private let cellButton = CustomButton()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -35,9 +37,10 @@ class ShoesCell: UICollectionViewCell {
     }
     
     private func setUI() {
-        [imageView].forEach { self.addSubview($0) }
+        [imageView, cellButton].forEach { self.addSubview($0) }
         
         setConstraints()
+        setButtons()
         
         self.backgroundColor = .white
         self.layer.cornerRadius = 4
@@ -50,5 +53,11 @@ class ShoesCell: UICollectionViewCell {
     
     private func setConstraints() {
         imageView.anchor(top: self.topAnchor, right: self.rightAnchor, left: self.leftAnchor, paddingTop: 2, paddingRight: 2, paddingLeft: 2, height: 156)
+        
+        cellButton.anchor(right: self.rightAnchor, bottom: self.bottomAnchor, left: self.leftAnchor, paddingRight: 4, paddingBottom: 12, paddingLeft: 4)
+    }
+    
+    private func setButtons() {
+        cellButton.title = "Add to cart"
     }
 }
