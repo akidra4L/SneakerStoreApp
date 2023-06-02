@@ -8,5 +8,8 @@
 import UIKit
 
 class Colors {
+    
     static let grayMainBackground = UIColor(named: "CustomGrayBackground")
+    
+    static let lightGray = UIColor(named: "CustomLightGray")
 }

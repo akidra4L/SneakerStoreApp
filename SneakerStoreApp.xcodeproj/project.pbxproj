@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		150EE8892A29E17900BBABDC /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150EE8882A29E17900BBABDC /* CustomImageView.swift */; };
+		150EE88E2A29E4E900BBABDC /* ShoesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150EE88D2A29E4E900BBABDC /* ShoesService.swift */; };
+		150EE8942A2A059200BBABDC /* EmptyCartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150EE8932A2A059200BBABDC /* EmptyCartView.swift */; };
 		1517CEE82A2675800041BB28 /* Step1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1517CEE72A2675800041BB28 /* Step1ViewController.swift */; };
 		1517CEEA2A2675890041BB28 /* Step2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1517CEE92A2675890041BB28 /* Step2ViewController.swift */; };
 		1517CEEC2A2675960041BB28 /* Step3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1517CEEB2A2675960041BB28 /* Step3ViewController.swift */; };
@@ -25,6 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		150EE8882A29E17900BBABDC /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		150EE88D2A29E4E900BBABDC /* ShoesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesService.swift; sourceTree = "<group>"; };
+		150EE8932A2A059200BBABDC /* EmptyCartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCartView.swift; sourceTree = "<group>"; };
 		1517CEE72A2675800041BB28 /* Step1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1ViewController.swift; sourceTree = "<group>"; };
 		1517CEE92A2675890041BB28 /* Step2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step2ViewController.swift; sourceTree = "<group>"; };
 		1517CEEB2A2675960041BB28 /* Step3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +61,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		150EE88C2A29E4C000BBABDC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				150EE88D2A29E4E900BBABDC /* ShoesService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		150EE8902A2A04E400BBABDC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				150EE8932A2A059200BBABDC /* EmptyCartView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		150EE8912A2A04E900BBABDC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1517CEF42A2679390041BB28 /* CartViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		150EE8922A2A04EE00BBABDC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		1517CEE62A26756D0041BB28 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,7 +123,9 @@
 		1517CEF32A2679280041BB28 /* Cart */ = {
 			isa = PBXGroup;
 			children = (
-				1517CEF42A2679390041BB28 /* CartViewController.swift */,
+				150EE8922A2A04EE00BBABDC /* Model */,
+				150EE8912A2A04E900BBABDC /* ViewController */,
+				150EE8902A2A04E400BBABDC /* View */,
 			);
 			path = Cart;
 			sourceTree = "<group>";
@@ -122,6 +161,7 @@
 				1546F6EC2A23A22A00B04004 /* Assets.xcassets */,
 				1546F6EE2A23A22A00B04004 /* LaunchScreen.storyboard */,
 				1546F6E32A23A22900B04004 /* AppDelegate.swift */,
+				150EE88C2A29E4C000BBABDC /* Services */,
 				1517CEED2A26760D0041BB28 /* TabBar */,
 				1517CEF02A2679080041BB28 /* Catalog */,
 				1517CEF32A2679280041BB28 /* Cart */,
@@ -154,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				159425612A25F30C006F4C20 /* CustomButton.swift */,
+				150EE8882A29E17900BBABDC /* CustomImageView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -262,7 +303,9 @@
 			files = (
 				15FE68E92A29A9490099BDAF /* ShoesCell.swift in Sources */,
 				15FE68E62A29A8A70099BDAF /* Shoes.swift in Sources */,
+				150EE8942A2A059200BBABDC /* EmptyCartView.swift in Sources */,
 				1517CEEF2A26761B0041BB28 /* TabBarViewController.swift in Sources */,
+				150EE8892A29E17900BBABDC /* CustomImageView.swift in Sources */,
 				159425622A25F30C006F4C20 /* CustomButton.swift in Sources */,
 				1517CEF52A2679390041BB28 /* CartViewController.swift in Sources */,
 				1517CEEA2A2675890041BB28 /* Step2ViewController.swift in Sources */,
@@ -271,6 +314,7 @@
 				15BBEE992A29B86E00CBE4BB /* Colors.swift in Sources */,
 				1517CEF82A2679510041BB28 /* ProfileViewController.swift in Sources */,
 				1517CEF22A2679190041BB28 /* CatalogViewController.swift in Sources */,
+				150EE88E2A29E4E900BBABDC /* ShoesService.swift in Sources */,
 				1517CEE82A2675800041BB28 /* Step1ViewController.swift in Sources */,
 				1546F6E42A23A22900B04004 /* AppDelegate.swift in Sources */,
 			);

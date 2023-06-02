@@ -7,6 +7,11 @@
 
 import UIKit
 
+enum CustomButtonTypes {
+    case addToCart
+    case addOrRemoveQuantity
+}
+
 class CustomButton: UIButton {
     
     public var title: String? {
@@ -15,8 +20,12 @@ class CustomButton: UIButton {
         }
     }
     
-    public init() {
+    public var customButtonType: CustomButtonTypes
+    
+    public init(type: CustomButtonTypes) {
+        self.customButtonType = type
         super.init(frame: .zero)
+        
         self.backgroundColor = .black
         self.layer.cornerRadius = 12
         

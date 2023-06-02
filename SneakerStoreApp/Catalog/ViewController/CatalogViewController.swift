@@ -9,13 +9,7 @@ import UIKit
 
 class CatalogViewController: UIViewController {
     
-    var shoes: [Shoes] = [
-        Shoes(image: UIImage(named: "1")!),
-        Shoes(image: UIImage(named: "2")!),
-        Shoes(image: UIImage(named: "3")!),
-        Shoes(image: UIImage(named: "4")!),
-        Shoes(image: UIImage(named: "5")!),
-    ]
+    var shoes: [Shoes] = ShoesService.shared.getAllShoes()
     let sectionInsets = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
     
     private let collectionView: UICollectionView = {
@@ -45,7 +39,7 @@ class CatalogViewController: UIViewController {
     }
     
     private func setConstraints() {
-        collectionView.anchor(top: view.topAnchor, right: view.rightAnchor, bottom: view.bottomAnchor, left: view.leftAnchor, paddingTop: 16, paddingRight: 16, paddingBottom: 100, paddingLeft: 16)
+        collectionView.anchor(top: view.topAnchor, right: view.rightAnchor, bottom: view.bottomAnchor, left: view.leftAnchor, paddingTop: 16, paddingBottom: 100)
     }
 }
 
@@ -70,12 +64,7 @@ extension CatalogViewController: UICollectionViewDataSource {
     }
 }
 
-extension CatalogViewController: UICollectionViewDelegate {
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("click")
-    }
-}
+extension CatalogViewController: UICollectionViewDelegate { }
 
 extension CatalogViewController: UICollectionViewDelegateFlowLayout {
     
