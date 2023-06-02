@@ -19,6 +19,9 @@
 		1546F6F02A23A22A00B04004 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1546F6EE2A23A22A00B04004 /* LaunchScreen.storyboard */; };
 		159425602A25F26A006F4C20 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1594255F2A25F26A006F4C20 /* UIView+Extensions.swift */; };
 		159425622A25F30C006F4C20 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159425612A25F30C006F4C20 /* CustomButton.swift */; };
+		15BBEE992A29B86E00CBE4BB /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BBEE982A29B86E00CBE4BB /* Colors.swift */; };
+		15FE68E62A29A8A70099BDAF /* Shoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FE68E52A29A8A70099BDAF /* Shoes.swift */; };
+		15FE68E92A29A9490099BDAF /* ShoesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FE68E82A29A9490099BDAF /* ShoesCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		1546F6F12A23A22A00B04004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1594255F2A25F26A006F4C20 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		159425612A25F30C006F4C20 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		15BBEE982A29B86E00CBE4BB /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		15FE68E52A29A8A70099BDAF /* Shoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shoes.swift; sourceTree = "<group>"; };
+		15FE68E82A29A9490099BDAF /* ShoesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +76,9 @@
 		1517CEF02A2679080041BB28 /* Catalog */ = {
 			isa = PBXGroup;
 			children = (
-				1517CEF12A2679190041BB28 /* CatalogViewController.swift */,
+				15FE68E22A29A8250099BDAF /* Model */,
+				15FE68E12A29A81B0099BDAF /* ViewController */,
+				15FE68E02A29A8150099BDAF /* View */,
 			);
 			path = Catalog;
 			sourceTree = "<group>";
@@ -127,6 +135,7 @@
 		1594255C2A25F23D006F4C20 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				15BBEE972A29B86200CBE4BB /* Colors */,
 				1594255E2A25F251006F4C20 /* CustomViews */,
 				1594255D2A25F248006F4C20 /* Extensions */,
 			);
@@ -147,6 +156,38 @@
 				159425612A25F30C006F4C20 /* CustomButton.swift */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		15BBEE972A29B86200CBE4BB /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				15BBEE982A29B86E00CBE4BB /* Colors.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		15FE68E02A29A8150099BDAF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				15FE68E82A29A9490099BDAF /* ShoesCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		15FE68E12A29A81B0099BDAF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1517CEF12A2679190041BB28 /* CatalogViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		15FE68E22A29A8250099BDAF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				15FE68E52A29A8A70099BDAF /* Shoes.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,12 +260,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15FE68E92A29A9490099BDAF /* ShoesCell.swift in Sources */,
+				15FE68E62A29A8A70099BDAF /* Shoes.swift in Sources */,
 				1517CEEF2A26761B0041BB28 /* TabBarViewController.swift in Sources */,
 				159425622A25F30C006F4C20 /* CustomButton.swift in Sources */,
 				1517CEF52A2679390041BB28 /* CartViewController.swift in Sources */,
 				1517CEEA2A2675890041BB28 /* Step2ViewController.swift in Sources */,
 				1517CEEC2A2675960041BB28 /* Step3ViewController.swift in Sources */,
 				159425602A25F26A006F4C20 /* UIView+Extensions.swift in Sources */,
+				15BBEE992A29B86E00CBE4BB /* Colors.swift in Sources */,
 				1517CEF82A2679510041BB28 /* ProfileViewController.swift in Sources */,
 				1517CEF22A2679190041BB28 /* CatalogViewController.swift in Sources */,
 				1517CEE82A2675800041BB28 /* Step1ViewController.swift in Sources */,
