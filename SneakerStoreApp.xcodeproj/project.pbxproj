@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		150C6B632A2A571C002AD585 /* CartTotalPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150C6B622A2A571C002AD585 /* CartTotalPriceView.swift */; };
 		150C6B652A2A675D002AD585 /* CartCellButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150C6B642A2A675D002AD585 /* CartCellButtonView.swift */; };
+		150C6B672A2A74AB002AD585 /* SuccessBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150C6B662A2A74AB002AD585 /* SuccessBottomSheetViewController.swift */; };
 		150EE8892A29E17900BBABDC /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150EE8882A29E17900BBABDC /* CustomImageView.swift */; };
 		150EE88E2A29E4E900BBABDC /* ShoesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150EE88D2A29E4E900BBABDC /* ShoesService.swift */; };
 		150EE8942A2A059200BBABDC /* EmptyCartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150EE8932A2A059200BBABDC /* EmptyCartView.swift */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		150C6B622A2A571C002AD585 /* CartTotalPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTotalPriceView.swift; sourceTree = "<group>"; };
 		150C6B642A2A675D002AD585 /* CartCellButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCellButtonView.swift; sourceTree = "<group>"; };
+		150C6B662A2A74AB002AD585 /* SuccessBottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessBottomSheetViewController.swift; sourceTree = "<group>"; };
 		150EE8882A29E17900BBABDC /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		150EE88D2A29E4E900BBABDC /* ShoesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesService.swift; sourceTree = "<group>"; };
 		150EE8932A2A059200BBABDC /* EmptyCartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCartView.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				1517CEF42A2679390041BB28 /* CartViewController.swift */,
+				150C6B662A2A74AB002AD585 /* SuccessBottomSheetViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				15BBEE992A29B86E00CBE4BB /* Colors.swift in Sources */,
 				150EE8962A2A18C200BBABDC /* CartCell.swift in Sources */,
 				1517CEF82A2679510041BB28 /* ProfileViewController.swift in Sources */,
+				150C6B672A2A74AB002AD585 /* SuccessBottomSheetViewController.swift in Sources */,
 				1517CEF22A2679190041BB28 /* CatalogViewController.swift in Sources */,
 				150EE88E2A29E4E900BBABDC /* ShoesService.swift in Sources */,
 				1517CEE82A2675800041BB28 /* Step1ViewController.swift in Sources */,

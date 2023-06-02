@@ -82,10 +82,12 @@ extension CartViewController {
             emptyCartView.isHidden = false
             cartTableView.isHidden = true
             cartTotalView.isHidden = true
+            cartConfirmButton.isHidden = true
         } else {
             emptyCartView.isHidden = true
             cartTableView.isHidden = false
             cartTotalView.isHidden = false
+            cartConfirmButton.isHidden = false
         }
     }
     
@@ -96,7 +98,7 @@ extension CartViewController {
     }
     
     @objc private func didConfirmButtonTapped() {
-        let alert = UIAlertController(title: "Confirmation", message: "Are you sure you want to proceed?", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Proceed with payment", message: "Are you sure you want to confirm?", preferredStyle: .alert)
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         
@@ -111,7 +113,7 @@ extension CartViewController {
     }
     
     private func openCustomBottomSheet() {
-        print("open")
+        self.present(SuccessBottomSheetViewController(), animated: true)
     }
 }
 
