@@ -14,9 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        let navigationController = UINavigationController(rootViewController: Step1ViewController())
+        
         self.window = UIWindow()
         self.window?.makeKeyAndVisible()
-        self.window?.rootViewController = TabBarViewController()
+        self.window?.rootViewController = navigationController
         
         setupInitialSettings()
         

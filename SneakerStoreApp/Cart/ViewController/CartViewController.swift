@@ -69,7 +69,11 @@ class CartViewController: UIViewController {
     }
 }
 
-extension CartViewController {
+extension CartViewController: SuccessBottomSheetDelegate {
+    
+    func didTapBackToShopping() {
+        navigationController?.popToRootViewController(animated: true)
+    }
     
     private func updateUI() {
         cartItems = ShoesService.shared.cartItems
@@ -113,7 +117,10 @@ extension CartViewController {
     }
     
     private func openCustomBottomSheet() {
-        self.present(SuccessBottomSheetViewController(), animated: true)
+        let successViewController = SuccessBottomSheetViewController()
+        successViewController.delegate = self
+        let navigationController = UINavigationController(rootViewController: successViewController)
+        present(navigationController, animated: true, completion: nil)
     }
 }
 
