@@ -8,6 +8,7 @@
 import UIKit
 
 class Step3ViewController: UIViewController {
+    
     private let backgroundImage: UIImageView = {
         let image = UIImage(named: "step3")
         let imageView = UIImageView(image: image)
