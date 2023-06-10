@@ -44,11 +44,16 @@ class Step1ViewController: UIViewController {
     }
     
     private func setButton() {
-        nextButton.title = "Next"
-        nextButton.addTarget(self, action: #selector(nextButtonTapped), for: .touchUpInside)
+        onboardingBottomSheet.delegate = self
+        onboardingBottomSheet.buttonTitle = "Next"
     }
-    
-    @objc func nextButtonTapped() {
+}
+
+
+// MARK: - OnboardingBottomSheetViewDelegate
+
+extension Step1ViewController: OnboardingBottomSheetViewDelegate {
+    func didButtonTap() {
         let step2ViewController = Step2ViewController()
         navigationController?.pushViewController(step2ViewController, animated: true)
     }
