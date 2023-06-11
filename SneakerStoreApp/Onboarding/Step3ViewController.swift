@@ -1,5 +1,7 @@
 import UIKit
 
+// MARK: - Step3ViewController
+
 class Step3ViewController: UIViewController {
     
     private let backgroundImage: UIImageView = {

@@ -1,16 +1,13 @@
-//
-//  CustomButton.swift
-//  SneakerStoreApp
-//
-//  Created by Alikhan Gubayev on 30.05.2023.
-//
-
 import UIKit
+
+// MARK: - CustomButtonTypes
 
 enum CustomButtonTypes {
     case addToCart
     case addOrRemoveQuantity
 }
+
+// MARK: - CustomButton
 
 class CustomButton: UIButton {
     

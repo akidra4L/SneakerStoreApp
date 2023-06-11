@@ -1,11 +1,6 @@
-//
-//  CustomImageView.swift
-//  SneakerStoreApp
-//
-//  Created by Alikhan Gubayev on 02.06.2023.
-//
-
 import UIKit
+
+// MARK: - CustomImageView
 
 class CustomImageView: UIImageView {
     

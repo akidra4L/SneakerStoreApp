@@ -1,15 +1,12 @@
-//
-//  OnboardingBottomSheetView.swift
-//  SneakerStoreApp
-//
-//  Created by Alikhan Gubayev on 03.06.2023.
-//
-
 import UIKit
+
+// MARK: - OnboardingBottomSheetViewDelegate
 
 protocol OnboardingBottomSheetViewDelegate: AnyObject {
     func didButtonTap() -> Void
 }
+
+// MARK: - OnboardingBottomSheetView
 
 class OnboardingBottomSheetView: UIView {
     

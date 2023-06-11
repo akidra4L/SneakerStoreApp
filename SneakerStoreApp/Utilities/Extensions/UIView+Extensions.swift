@@ -1,10 +1,3 @@
-//
-//  UIView+Extensions.swift
-//  SneakerStoreApp
-//
-//  Created by Alikhan Gubayev on 30.05.2023.
-//
-
 import UIKit
 
 extension UIView {
